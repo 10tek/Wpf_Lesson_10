@@ -1,0 +1,35 @@
+﻿<Window x:Class="FlowDocumentsLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowDocumentsLesson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <FlowDocumentReader>
+        <FlowDocument>
+            <Paragraph>
+                <Italic FontFamily="Comic Sans MS" FontSize="40" Foreground="Red">В</Italic>
+                лесу родилась ёлочка, в лесу она росла. Зимой и летом стройная зеленая была.
+            </Paragraph>
+            <BlockUIContainer>
+                <Button Content="ПОШЕЛ НАХУЙ" Click="ButtonClick" Height="40">
+                </Button>
+            </BlockUIContainer>
+            <Table>
+                <Table.Columns>
+                    <TableColumn Width="100"></TableColumn>
+                    <TableColumn Width="100"></TableColumn>
+                    <TableColumn Width="100"></TableColumn>
+                </Table.Columns>
+                <TableRowGroup>
+                    <TableRow Background="Red">
+                        <TableCell ColumnSpan="123">
+                            <Paragraph FontSize="123"/>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+            </Table>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Window>
